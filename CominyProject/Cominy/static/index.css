@@ -1,3 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Mono&family=Work+Sans:wght@500&display=swap');
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.logo {
+  display: inline-block;
+  font-family: "Nova Mono", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 1.75vw;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Work Sans", Arial, Helvetica, sans-serif;
+  font-size: 1.25vw;
+  color: #030303;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #58b4f5;
+}
+
+.navitem {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+  text-align: center;
+  width: 5vw;
+}
+
+.navitem:nth-child(3) {
+  width: 11vw;
+}
+
+.navitem:nth-child(4) {
+  width: 4.5vw;
+}
+
+.navitem:nth-child(5) {
+  width: 4.5vw;
+}
+
+.navitem:nth-child(2) {
+  margin-left: 35vw;
+}
+
+
+.navitem:not(:first-child):after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #29f28e;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.navitem:not(:first-child):hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+@media only screen and (max-width: 800px) {
+  .navitem:not(:first-child) {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .navitem:not(:first-child) {
+    display: inline-block;
+  }
+}
+
+.firstContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 750px;
+}
+
 .header {
-  color: aqua;
+  font-family: "Work Sans", Arial, Helvetica, sans-serif;
+  font-size: 3vw;
+}
+
+.youcouldlist {
+  display: block;
+  font-family: "Work Sans", Arial, Helvetica, sans-serif;
+  font-size: 1.5vw;
+}
+
+.youcoulditem:last-child {
+  color: red
+}
+
+.banner {
+  background-color: #58b4f5;
+  height: 500px;
+}
+
+.infotext {
+  margin: 0;
+  padding: 100px 400px;
+}
+
+p {
+  margin: 0;
+  font-family: "Work Sans", Arial, Helvetica, sans-serif;
+  font-size: 1.25vw;
+}
+
+.highlight {
+  color: #29f28e;
+  font-weight: bold;
 }

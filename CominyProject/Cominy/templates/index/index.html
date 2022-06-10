@@ -2,11 +2,38 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
     <title>{% block title %}Welcome{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="{% static 'index.css' %}" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
-    <h1 class="header">Cominy</h1>
+    <nav>
+      <div class="navitems">
+        <div class="menu">
+          <ul class="navitemlist">
+            <li class="navitem"><span class="logo">COMINY</span></li>
+            <li class="navitem"><a href="#">Home</a></li>
+            <li class="navitem"><a href="#">Warum Cominy?</a></li>
+            <li class="navitem"><a href="#">Demo</a></li>
+            <li class="navitem"><a href="#">Login</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="banner">
+      <div class="infotext">
+        <p>Ein Ort, wo du dein ganzes</p>
+        <p>Unternehmen managen kannst?</p>
+        <p>Dazu noch mit Mitarbeitern</p>
+        <p>kommunizieren und neue Projekte</p>
+        <p>planen? Und das von <span class="highlight">jedem Punkt</span></p>
+        <p>der Welt aus.</p>
+      </div>
+    </div>
   </body>
 </html>
